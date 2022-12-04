@@ -23,6 +23,11 @@ extension CellViewModel {
     }
     
     func setupAny(cell: UIView) {
-        setup(cell: cell as! CellType)
+        guard let cell = cell as? CellType else {
+            assertionFailure("Cann`t setup cell")
+            return
+        }
+        
+        setup(cell: cell)
     }
 }

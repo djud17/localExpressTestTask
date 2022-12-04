@@ -14,3 +14,13 @@ final class CustomTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
 }
+
+struct CustomTableViewCellModel {
+    let itemName: String
+}
+
+extension CustomTableViewCellModel: CellViewModel {
+    func setup(cell: CustomTableViewCell) {
+        cell.itemNameLabel.text = itemName
+    }
+}

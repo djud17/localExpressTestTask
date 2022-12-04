@@ -17,3 +17,9 @@ final class LoadingDataTableViewCell: UITableViewCell {
         loadingDataActivityIndicator.color = .white
     }
 }
+
+struct LoadingDataTableViewCellModel: CellViewModel {
+    func setup(cell: LoadingDataTableViewCell) {
+        cell.loadingDataActivityIndicator.startAnimating()
+    }
+}
