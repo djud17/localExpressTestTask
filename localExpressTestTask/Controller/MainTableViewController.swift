@@ -98,7 +98,7 @@ extension MainTableViewController {
     }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == dataArray.count - 10,
+        if indexPath.row == dataArray.count - 20,
             !isLoadingData {
             loadMoreData()
         }
