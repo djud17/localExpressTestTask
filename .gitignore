@@ -1,8 +1,5 @@
 # General
-.DS_Store .AppleDouble .LSOverride
+.DS_Store
 
 ## User settings
-
 xcuserdata/
-
-- .xcscmblueprint *.xccheckout
